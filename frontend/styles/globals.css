@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './tokens.css';
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: radial-gradient(1200px 700px at 70% -10%, #223243, var(--surface-0)); color: var(--color-iceMist); }
+body { font-family: Inter, sans-serif; }
+.energy-frame { border: 1px solid var(--line-soft); background: linear-gradient(135deg, rgba(23,31,41,0.86), rgba(12,15,19,0.88)); }
+.blueprint-grid { background-image: linear-gradient(to right, rgba(199,214,223,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(199,214,223,0.06) 1px, transparent 1px); background-size: 28px 28px; }

@@ -1,0 +1,17 @@
+:root {
+  --color-obsidian: #0c0f13;
+  --color-smokedBronze: #5f4a3c;
+  --color-graphite: #1f252d;
+  --color-stormBlue: #213347;
+  --color-deepMoss: #1f3a31;
+  --color-oxideGold: #8a6a3b;
+  --color-emberAccent: #d88938;
+  --color-iceMist: #c7d6df;
+  --color-slateAsh: #8e98a4;
+
+  --surface-0: #090b0f;
+  --surface-1: #11161c;
+  --surface-2: #171f29;
+  --line-soft: rgba(199, 214, 223, 0.18);
+  --line-strong: rgba(216, 137, 56, 0.45);
+}
