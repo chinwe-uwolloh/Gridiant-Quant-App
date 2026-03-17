@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Inter+Tight:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @import './tokens.css';
 
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; background: radial-gradient(1200px 700px at 70% -10%, #1b3148, var(--surface-0)); color: var(--color-iceMist); }
-body { font-family: "SF Mono", Menlo, Monaco, "JetBrains Mono", monospace; }
+html, body { margin: 0; padding: 0; background: radial-gradient(1200px 700px at 70% -10%, #0f3d5e, var(--surface-0)); color: var(--color-iceMist); }
+body { font-family: Inter, system-ui, sans-serif; }
+.tech-font { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, monospace; }
 .liquid-bg {
   background:
-    radial-gradient(520px 320px at 8% 6%, rgba(133, 198, 255, 0.12), transparent 70%),
-    radial-gradient(600px 360px at 84% 16%, rgba(125, 245, 195, 0.1), transparent 70%),
-    radial-gradient(460px 260px at 52% 94%, rgba(217, 141, 65, 0.08), transparent 70%);
+    radial-gradient(520px 320px at 8% 6%, rgba(34, 211, 238, 0.16), transparent 70%),
+    radial-gradient(600px 360px at 84% 16%, rgba(46, 196, 182, 0.14), transparent 70%),
+    radial-gradient(460px 260px at 52% 94%, rgba(28, 110, 140, 0.2), transparent 70%);
 }
 .soft-card {
   border: 1px solid var(--line-soft);
@@ -20,11 +21,11 @@ body { font-family: "SF Mono", Menlo, Monaco, "JetBrains Mono", monospace; }
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
 }
 .glass-card {
-  border: 1px solid rgba(216, 226, 234, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
-  background: linear-gradient(160deg, rgba(26, 38, 53, 0.62), rgba(11, 17, 26, 0.62));
-  backdrop-filter: blur(14px);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), 0 18px 35px rgba(0, 0, 0, 0.22);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.2);
 }
 .soft-hover { transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease; }
 .soft-hover:hover { transform: translateY(-2px); border-color: rgba(216, 226, 234, 0.32); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 24px 40px rgba(0, 0, 0, 0.28); }

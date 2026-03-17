@@ -37,6 +37,19 @@ services:
     env_file: ["frontend/.env.example"]
     depends_on: [backend]
     ports: ["3000:3000"]
-
+  caddy:
+  image: caddy:2
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - ./infrastructure/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+    - caddy_data:/data
+    - caddy_config:/config
+  depends_on:
+    - frontend
+    - backend
 volumes:
   pgdata:
+  caddy_data:
+  caddy_config:

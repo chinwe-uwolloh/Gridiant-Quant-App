@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 
 from app.api.deps import get_current_user
-from app.schemas.metrics import DashboardMetrics, SavingsMetrics, TelemetryMetrics
+from app.schemas.metrics import DashboardMetrics, QuantumImpactMetrics, SavingsMetrics, TelemetryMetrics
 from app.services.telemetry_service import TelemetryService
 
 router = APIRouter()
@@ -20,3 +20,8 @@ def telemetry(user: dict = Depends(get_current_user)) -> TelemetryMetrics:
 @router.get('/savings', response_model=SavingsMetrics)
 def savings(user: dict = Depends(get_current_user)) -> SavingsMetrics:
     return TelemetryService().savings(user['id'])
+
+
+@router.get('/quantum-impact', response_model=QuantumImpactMetrics)
+def quantum_impact(user: dict = Depends(get_current_user)) -> QuantumImpactMetrics:
+    return TelemetryService().quantum_impact(user['id'])

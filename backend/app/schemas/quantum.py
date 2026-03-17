@@ -18,6 +18,11 @@ class QuantumRefineResponse(BaseModel):
     status: str
     used_quantum: bool
     improved_cost_delta: float
+    decision_quality: float = 0.0
+    entanglement_score: float = 0.0
+    qec_score: float = 0.0
+    resource_allocation_efficiency: float = 0.0
+    inference_latency_ms: float = 0.0
 
 
 class QuantumEstimateRequest(BaseModel):

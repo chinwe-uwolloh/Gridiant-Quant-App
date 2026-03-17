@@ -21,3 +21,13 @@ class SavingsMetrics(BaseModel):
     month_to_date_cost_baseline: float
     month_to_date_cost_optimized: float
     month_to_date_savings_percent: float
+
+
+class QuantumImpactMetrics(BaseModel):
+    quantum_energy_saved_kwh: float
+    quantum_cost_saved_usd: float
+    optimization_success_rate: float
+    inference_throughput_per_min: float
+    entanglement_efficiency_index: float
+    qec_stability_score: float
+    realtime_confidence: float
