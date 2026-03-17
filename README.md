@@ -1,6 +1,6 @@
-# Gridiant 2.0
+# Gridiant 
 
-Gridiant 2.0 is a premium AI + quantum enhanced energy orchestration platform for homes, buildings, campuses, EV fleets, and microgrids.
+Gridiant is a premium AI + quantum enhanced energy orchestration platform for homes, buildings, campuses, EV fleets, and microgrids.
 
 ## Stack
 - Frontend: Next.js 15 + TypeScript + Tailwind tokens + React Three Fiber + D3 + Framer Motion
